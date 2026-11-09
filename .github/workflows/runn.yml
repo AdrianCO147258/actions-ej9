@@ -5,6 +5,6 @@ jobs:
         runs-on: windows-latest
         steps:
           - name: compile
-            run: javac  src/hola.java
+            run: javac  hola.java
           - name: runnin
-            run: java src/hola
+            run: java hola
