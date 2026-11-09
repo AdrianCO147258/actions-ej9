@@ -7,4 +7,4 @@ jobs:
           - name: compile
             run: javac  src/hola.java
           - name: runnin
-            run: java scr/hola
+            run: java src/hola
