@@ -5,8 +5,7 @@ jobs:
         runs-on: windows-latest
         steps:
           - name: compile
-            uses: C:\Users\isard\Documents\DDEC\TESTACTIONS\actions-ej9\src\hola.java
-            run: javac  C:\Users\isard\Documents\DDEC\TESTACTIONS\actions-ej9\src\hola.java
+            run: javac -d out $(find src -name "*.java")
+
           - name: runnin
-            uses: uses: C:\Users\isard\Documents\DDEC\TESTACTIONS\actions-ej9\src\hola
-            run: java C:\Users\isard\Documents\DDEC\TESTACTIONS\actions-ej9\src\hola
+            run: java out/hola.java
