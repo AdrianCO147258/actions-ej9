@@ -1,9 +1,10 @@
 name: runn
 on: [push]
 jobs:
-    runs-on: windows-latest
     comp:
-     - name: compile
-       run: javac hola.javac
-     - name: runnin
-       run: java hola
+        runs-on: windows-latest
+        steps:
+          - name: compile
+            run: javac hola.javac
+          - name: runnin
+            run: java hola
