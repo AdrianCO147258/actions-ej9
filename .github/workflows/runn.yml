@@ -5,7 +5,7 @@ jobs:
         runs-on: windows-latest
         steps:
           - name: compile
-            run: javac -d out $(find src -name "src/*.java")
+            run: javac out $(find src -name "src/*.java")
 
           - name: runnin
             run: java out/hola.java
