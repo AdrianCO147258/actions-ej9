@@ -6,7 +6,9 @@ jobs:
         steps:
           - name: downl
             uses: actions/checkout@v5 
+          - name: out
+            run: mkdir -p out
           - name: compile
-            run: javac src/hola.java
+            run: javac -d out src/hola.java
           - name: run
-            run: java hola
+            run: java out/hola
