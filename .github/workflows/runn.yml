@@ -5,4 +5,8 @@ jobs:
         runs-on: windows-latest
         steps:
           - name: downl
-            uses: actions/checkout@v5
+            uses: actions/checkout@v5 
+          - name: compile
+            run: javac src/hola.java
+          - name: run
+            run: java src/hola
