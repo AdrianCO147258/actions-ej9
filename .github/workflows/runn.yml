@@ -4,8 +4,5 @@ jobs:
     comp:
         runs-on: windows-latest
         steps:
-          - name: compile
-            run: javac out $(find src -name "src/*.java")
-
-          - name: runnin
-            run: java out/hola.java
+          - name: downl
+            uses: actions/checkout@v5
