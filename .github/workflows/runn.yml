@@ -11,5 +11,4 @@ jobs:
           - name: files
             run: dir -r
           - name: run
-
-            run: java src/hola.class
+            run: java C:\Users\isard\Documents\DDEC\TESTACTIONS\actions-ej9\src\hola
