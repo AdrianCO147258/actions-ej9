@@ -9,4 +9,4 @@ jobs:
           - name: compile
             run: javac src/hola.java
           - name: run
-            run: java src/hola
+            run: java hola
